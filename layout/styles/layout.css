@@ -1,0 +1,364 @@
+@charset "utf-8";
+@import url("framework.css");
+
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row1, .row1 a{}
+.row2, .row2 a{}
+.row3, .row3 a{}
+.row4{border-top:5px solid;}
+.row5, .row5 a{}
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{}
+#mainav, .logo, .flag {display:inline-block; float:left; margin:0; list-style:none;}
+#mainav {width: calc(100% - 247px);} 
+.centered_title_page {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size:45px; font-weight: bold; text-transform: uppercase;
+}
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:200px 0;}
+
+#pageintro article{max-width:65%; margin:0 auto; text-align:center;}
+#pageintro article *{text-transform:uppercase;}
+#pageintro article .heading{margin:0 0 30px 0; padding:0; line-height:1; font-size:46px;}
+#pageintro article p{margin:0;}
+#pageintro article p:first-of-type{margin-bottom:20px; font-size:18px; letter-spacing:5px;}
+#pageintro article footer{margin-top:50px;}
+
+/* Background 
+-------------------------------------------------------------------------------------------------------------- */
+.grey_bg {background-color: #f5f5f5;} .orange_bg {background-color: #FAF6F0;}
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.area {margin: 0 auto; padding: 25px 0 55px 0;}
+.title_area {text-align: center; color: #CFAB80; font-size: 37px; padding-bottom: 20px;}
+.center_horizontal {display: flex; justify-content: center;}
+.main_img {aspect-ratio: 16/4.625; object-fit: cover;}
+
+.button, .button_blank {display: inline-block; line-height: 26px; padding: 0.5em 0.7em; margin-top: 1em; border: 1px solid #CFAB80; white-space: nowrap; 
+    cursor: pointer; outline: none; background-color: transparent; text-decoration: none; color: #4C4953; border-radius: 0.1em; text-transform: capitalize;
+}
+.button:hover {color: #B40707;} .button_blank:hover {color: darkgreen;}
+
+/* Content */
+.services{}
+.services li:nth-child(-n+4){margin-bottom:50px;}/* Adds a bottom margin to the first four elements only */
+.services article{}
+
+.sectiontitle{text-align:center; margin-bottom:80px;}
+.sectiontitle *{margin:0;}
+
+/* Comments */
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li{margin:0 0 10px 0; padding:15px;}
+#comments .avatar{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid;}
+#comments address{font-weight:bold;}
+#comments time{font-size:smaller;}
+#comments .comcont{display:block; margin:0; padding:0;}
+#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
+
+#comments form{display:block; width:100%;}
+#comments input, #comments textarea{width:100%; padding:10px; border:1px solid;}
+#comments textarea{overflow:auto;}
+#comments div{margin-bottom:15px;}
+#comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
+
+
+/* Split Box
+--------------------------------------------------------------------------------------------------------------- */
+.splitclrs{border:solid; border-width:5px 0;}
+
+.elements{margin:30px 0;}
+.elements li{display:block; margin-bottom:15px; padding:20px;}
+.elements li:last-child{margin-bottom:0;}
+.elements li::before, .elements li::after{display:table; content:"";}
+.elements li::after{clear:both;}
+.elements li > :first-child{display:block; float:left; margin-right:5%;}
+.elements li > :last-child{margin-top:17px;}
+.elements li *{margin:0;}
+.elements li .heading{line-height:1; font-size:1.2rem;}
+
+.testimonial{margin:30px 0;}
+.testimonial figure{margin-bottom:20px;}
+.testimonial figure img{float:left; margin-right:15px;}
+.testimonial figure figcaption{float:left; margin:15px 0 0 0;}
+.testimonial figure figcaption *{display:block; margin:0; padding:0; line-height:1;}
+.testimonial figure figcaption strong{margin-bottom:5px;}
+.testimonial figure figcaption br{display:none;}
+.testimonial figure figcaption em{font-size:.8rem;}
+.testimonial blockquote{display:block; position:relative; width:100%; margin:0; padding:30px 0 0 0; line-height:1.4; z-index:1;}
+.testimonial blockquote::before{display:block; position:absolute; top:0; left:0; font-family:"FontAwesome"; font-size:60px; content:"\f10d"; z-index:-1;}
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:0;}
+
+#footer .heading{margin-bottom:20px; font-size:1.2rem;}
+
+#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+
+#footer .contact{}
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+#footer .contact li *{margin:0; padding:0; line-height:1.6;}
+#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+
+#footer input, #footer button{border:1px solid;}
+#footer input{display:block; width:100%; padding:8px;}
+#footer button{padding:8px 18px 10px; text-transform:uppercase; font-weight:700; cursor:pointer;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+/* Transition Fade
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+
+/* Rounded Corners
+--------------------------------------------------------------------------------------------------------------- */
+.btn, .icon, #footer input, #footer button, #backtotop, .faico a, .elements li{border-radius:10px; background-clip:padding-box;}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{}
+#mainav ul.clear{margin-top:1px; margin-bottom: 0px;}
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 45px; padding:0; font-size: 20px; font-weight: normal;}
+#mainav li:first-child{margin-left:0;} #mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:30px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:35px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+@media screen and (max-width:1440px) {
+    #mainav li{margin:0 30px;}
+}
+@media screen and (max-width:1200px) {
+    #mainav li{margin:0 13px; font-size: 16px;} 
+}
+
+#mainav form{display:none; margin:0; padding:0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:1px solid;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+
+
+/* Back to Top */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+
+/* Gallery
+--------------------------------------------------------------------------------------------------------------- */
+#gallery{display:block; width:100%;}
+#gallery figure figcaption{display:block; width:100%; clear:both;}
+#gallery li{margin-bottom:30px;}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#4C4953; background-color:#fff; font-family:'The Youngest Serif Display', Garamond, Times New Roman, Arial;}
+a, .green_color{color:rgb(33, 158, 75);}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
+p {text-align: justify}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+
+.btn, .btn.inverse:hover{color:#fff; background-color:rgb(33, 158, 75); border-color:rgb(33, 158, 75);}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+.icon{color:inherit; border-color:inherit;}
+a .icon:hover, article:hover a .icon{color:#fff; background-color:rgb(33, 158, 75);}
+
+
+/* Rows */
+.row1{color:#000; font-weight: bold;}
+.row2, .row2 a{}
+.row3 .heading{color:#474747;}
+.row4{color:#CBCBCB; background-color:#272727; border-color:#CFAB80;}
+.row5, .row5 a{color:#CBCBCB; background-color:#1a1a1a;}
+
+
+/* Header */
+#header #logo a{color:inherit;}
+
+
+/* Page content */
+.content {padding: 0 35px;}
+.right_side p:first-child {margin-top: 0;}
+  
+
+/* Footer */
+#footer .heading{color:#CFAB80;}
+#footer .linklist li{border-color:rgba(255,255,255,.2);}
+
+#footer input, #footer button{border-color:transparent;}
+#footer input{color:#FFFFFF; background-color:#1A1A1A;}
+#footer input:focus{border-color:rgb(33, 158, 75);}
+#footer button{color:#FFFFFF; background-color:rgb(33, 158, 75);}
+
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active_menu a, #mainav a:hover, #mainav li:hover > a{color:rgb(33, 158, 75); background-color:inherit;}
+#mainav li li a, #mainav .active_menu li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active_menu .active_menu > a{color:#FFFFFF; background-color:rgb(33, 158, 75);}
+#mainav form select{color:#CFAB80; background-color:#fff; border-color:#CFAB80;}
+
+#backtotop{color:#A61111; background-color: transparent;}
+
+/* Tables + Comments */
+table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
+#comments input:focus, #comments textarea:focus, #comments *:required:focus{border-color:rgb(33, 158, 75);}
+th{color:#FFFFFF; background-color:#373737;}
+tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
+tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+table a, #comments a{background-color:inherit;}
+
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+ .general_padding {margin: 0 auto;} 
+ .left_side p, .right_side p {text-align: justify;} .left_side p:first-child, .right_side p:first-child {margin-top: 0;}
+
+@media screen and (min-width:750px) {
+    #mainav form select{width:50%; margin: 0 auto; padding:5px; border:1px solid;}
+}
+@media screen and (min-width:978px){
+	.general_padding {padding: 0 10px;} 
+    .left_side {padding-right: 35px;} .right_side {padding-left: 35px;} .split {padding-top: 85px;}
+    img.left_right_side {width: 85%;}  img.founder {width: 60%;}
+}
+@media screen and (min-width:1024px){
+    #header .flag {padding: 30px 15px 30px 0; text-align: right;} #header .logo {padding: 20px 0 20px 15px;}
+}
+@media screen and (min-width:1100px){
+	.general_padding {padding: 0 100px;} 
+}
+@media screen and (min-width:1600px){
+	.general_padding {padding: 0 150px;}
+}
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:978px){
+	.hoc{max-width:90%;} .area {padding: 5px 0 35px 0;} .general_padding {padding: 0 16px;}
+
+	#header{padding:5px 0 15px 0;}
+    #header .logo {padding: 15px 0 0 10px; margin: 0;} #header .flag {padding: 25px 10px 0 0; margin: 0;}
+
+	#mainav{} #mainav ul{display:none;} #mainav form{display:block;}
+    .left_side {padding-right: 20px;} .right_side {padding-left: 20px;} .split {padding-top: 30px;}
+    img.left_right_side {width: 95%;} img.founder {width: 80%;}
+
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+@media screen and (min-width:750px) and (max-width:978px){
+	.elements li > :last-child{margin-top:8px;}
+    #mainav form{padding: 20px 0 10px 0;}
+    img {padding: 0 6px;}
+    .flag img {padding: 0;}
+}
+
+@media screen and (max-width:750px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter, .one_eighth, .three_eighth, .five_eighth, .seven_eighth{display:block; float:none; width:auto; margin:0; padding:0;}
+
+	#header{text-align:center;} #header #mainav {display:block; float:none; width:auto; margin:0; padding:0;}
+	#header .logo{display:block; float:none; width:auto; margin: 0; padding: 10px;} #header .flag {display:block; float:none; width:auto; margin:0; padding: 5px;}
+
+	.services li:nth-child(-n+4){margin-bottom:30px;}
+
+    img {padding: 0;} /*div.flag img {padding: 0;}*/
+
+	#footer{padding-bottom:50px;}/* Not needed, just looks a little better */
+}
+
+@media screen and (max-width:450px){
+	.elements li > :last-child{margin-top:5px;} .general_padding {padding: 0 5px;}
+}
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:670px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+    
+    #header{padding:5px 0;}    
+    .centered_title_page, .title_area {font-size: 33px;} .title_area {padding-bottom: 15px;}
+    .left_side, .right_side, .content {padding: 0 10px;} .split {padding: 0;}
+    .right_side p:first-child {margin-top: 25px;}
+    img.left_right_side, img.founder {width: 100%;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+
+	#pageintro li article{max-width:none; width:100%;}
+	#pageintro li .heading{font-size:2rem;}
+}
+
+/* Style the navbar */
+#navbar {
+	background-color: #fff; color: #CFAB80;
+}
+  
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {position: fixed; top: 0; width: 100%;}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {padding-top: 50px; padding-top: 60px;}
+
+#wrapperNinh{font-size:0;}
+
+#wrapperNinh>*{font-size:16px;}

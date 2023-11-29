@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dai Xuyen Furniture</title>
+	<meta charset="utf-8"/>
+    <meta name="robots" content="max-image-preview:large" />
+	<meta name="keywords" content="Vietnamese wooden furniture factory" />
+	<meta name="description" content="Manufacturing, trade and service enterprises in the furniture industry." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="layout/styles/slider.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="layout/styles/image-grid.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="layout/styles/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="top">
+    <div id="navbar" class="wrapper row1">
+    	<header id="header"> 
+    	<div class="group ">
+    		<div class="first logo"><img  src="images/logo.png" alt="LOGO" style="max-width: 170px;" /></div>
+    		<div id="mainav">
+    			<nav>
+    				<ul class="center_horizontal clear">
+    					<li><a href="./homepage.html">HOME PAGE</a></li>
+    					<li><a href="./about-us.html">ABOUT US</a></li>
+    					<li><a href="./EXPERTISE.html">OUR EXPERTISE</a></li>
+    					<li><a href="./sustainability.html">OUR SUSTAINABILITY</a></li>
+    					<li><a href="contact.html">CONTACT</a></li>
+    				</ul>
+    			</nav>
+    		</div>
+            <div class="flag"><img src="images/uk-flag.png" style="width: 18px;" />&nbsp; 
+                <a href="trang-chu.html"><img src="images/vn-flag.png" style="width: 18px;" /></a>
+            </div>
+    	</div>
+    		<!-- ################################################################################################ -->
+    	</header>
+    </div>
+<!-- ################################################################################################ -->
+<!-- Slideshow container -->
+    <div class="slideshow-container clear">
+    <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" style="display: block;">
+            <img src="images/25-scaled-1.jpg" class="full_slider main_img" style="padding: 0;" />
+        </div>
+        <div class="mySlides fade" style="display: none;">
+            <img src="images/26-scaled-1.jpg" class="full_slider main_img" style="padding: 0;" />
+        </div>
+        <div class="mySlides fade" style="display: none;">
+            <img src="images/27-scaled-1.jpg" class="full_slider main_img" style="padding: 0;" />
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a id="next" class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot active_img" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    var autoplayInterval = setInterval(function() {// Start autoplaying automatically
+        document.getElementById("next").click(); // Get element via id and click next
+      }, 3500); // Do this every 1 second, increase this!
+    
+    function stopAutoplay() { // Stop function added to button
+      clearInterval(autoplayInterval);// Stop the autoplay
+    }
+    
+    function plusSlides(n) { // Next/previous controls
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {  // Thumbnail image controls
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1;}
+      if (n < 1) {slideIndex = slides.length;}
+      for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+      for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active_img", "");}
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active_img";
+    }
+    </script>
+<!-- End Slideshow container -->
+<!-- ################################################################################################ -->
+    <div class="area group"><div class="general_padding">
+        <div class="one_third first" style="padding-top: 30px;">
+            <h3 class="center bold">OUR MISSION</h3>
+            <div class="content slogan">
+                <p class="center">We do believe in our experience and knowledge in the timber industry to provide the best quality wooden furniture on the international market.</p>
+            </div>
+        </div>
+        <div class="one_third" style="padding-top: 30px;">
+            <h3 class="center bold">OUR VISION</h3>
+            <div class="content slogan">
+                <p class="center">Your wishes are ours. Whatever your project, we will make it happen, nothing is impossible.</p>
+            </div>
+        </div>
+        <div class="one_third" style="padding-top: 30px;">
+            <h3 class="center bold">OUR VALUE</h3>
+            <div class="content slogan">
+                <p class="center">We always want the best for you by providing our expertise. </p>
+            </div>
+        </div>
+    </div></div>
+    <div class="area group grey_bg">
+        <p class="title_area">COMPANY FACT</p>
+        <div class="general_padding center_horizontal"><img src="images/Company-Facts.png" /></div>
+    </div>
+    <div class="area group">
+        <p class="title_area">ABOUT US</p>
+        <div class="general_padding">
+            <div class="one_half">
+                <div class="left_side">
+                    <p><strong>MORE THAN 20 YEARS OF EXPERIENCE IN THE MANUFACTURING BUSINESS OF HARDWOOD FURNITURE</strong></p>
+                    <p>Dai Xuyen Furniture Co., Ltd. was founded in 2005, and is located in Thuận An City, in Bình Dương Province.</p>
+                    <p>Dai Xuyen Furniture all started from a small joinery workshop established by our founder – Mr. Pham Van Xuan ...</p>
+                    <p><strong>WE ARE PROUD OF WHAT WE DO AND WOULD LIKE TO INVITE YOU TO LEARN MORE ABOUT US</strong></p>
+                    <p><a href="about-us.html" class="button_blank">View more</a></p>
+                </div>
+            </div>
+            <div class="one_half">
+                <div class="slideshow-container-aboutus right_side">
+                <!-- Full-width images with number and caption text -->
+                    <div class="mySlide_aboutus fade" style="display: block;">
+                      <img src="images/13-scaled-1.jpg" class="full_slider" />
+                    </div>
+                    <div class="mySlide_aboutus fade" style="display: none;">
+                      <img src="images/14-scaled-1.jpg" class="full_slider" />
+                    </div>
+                    <div class="mySlide_aboutus fade" style="display: none;">
+                      <img src="images/15-scaled-1.jpg" class="full_slider" />
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides_Aboutus(-1)">❮</a>
+                    <a id="nextAboutus" class="next" onclick="plusSlides_Aboutus(1)">❯</a>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot_aboutus active_img_aboutus" onclick="currentSlide_Aboutus(1)"></span>
+                    <span class="dot_aboutus" onclick="currentSlide_Aboutus(2)"></span>
+                    <span class="dot_aboutus" onclick="currentSlide_Aboutus(3)"></span>
+                </div>
+                </div>
+                <script type="text/javascript">
+                var slideAboutusIndex = 1;
+                showSlides_aboutus(slideAboutusIndex);
+                var autoplayInterval_Aboutus = setInterval(function() {// Start autoplaying automatically
+                    document.getElementById("nextAboutus").click(); // Get element via id and click next
+                  }, 3500); // Do this every 1 second, increase this!
+                
+                function stopAutoplay_Aboutus() { // Stop function added to button
+                  // Stop the autoplay
+                  clearInterval(autoplayInterval_Aboutus);
+                }
+                
+                function plusSlides_Aboutus(n) { // Next/previous controls
+                  showSlides_aboutus(slideAboutusIndex += n);
+                }
+                
+                function currentSlide_Aboutus(n) {  // Thumbnail image controls
+                  showSlides_aboutus(slideAboutusIndex = n);
+                }
+                function showSlides_aboutus(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlide_aboutus");
+                  var dots = document.getElementsByClassName("dot_aboutus");
+                  if (n > slides.length) {slideAboutusIndex = 1;}
+                  if (n < 1) {slideAboutusIndex = slides.length;}
+                  for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+                  for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active_img_aboutus", "");}
+                  slides[slideAboutusIndex - 1].style.display = "block";
+                  dots[slideAboutusIndex - 1].className += " active_img_aboutus";
+                }
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="area group orange_bg">
+        <p class="title_area">OUR EXPERTISE</p>
+        <div class="general_padding">
+            <div class="one_half">
+                <div class="left_side">
+                  <img src="images/16-scaled-1.jpg" class="left_right_side" />
+                </div>
+            </div>
+            <div class="one_half">
+                <div class="right_side">
+                    <p><strong>CREATE THE MOST SPLENDID CUSTOMER EXPERIENCE</strong></p>
+                    <p>At Dai Xuyen Furniture, we constantly improve and leverage our service by providing a wide range of cut-to-size solutions such as slim line or seamless edgebanding technology and postforming furniture (table, kitchen cabinet…).</p>
+                    <p>So that you can enjoy the perks of the comprehensive service that helps achieve more consistent and more aesthetically pleasing interior spaces as a whole.</p>
+                </div>
+            </div>
+            <div class="split clear">&nbsp;</div>
+            <div class="one_half">
+                <div class="left_side">
+                    <p><strong>WHATEVER YOUR PROJECT, WE CAME ALONG WITH YOU FROM THE PRILIMINARY CONCEPT TO THE DELIVERY OF YOUR PRODUCTS</strong></p>
+                    <p>At Dai Xuyen Furniture, we are pretty well-known for antique-themed design and contemporary design.</p>
+                    <p>We mostly work with Solid Oak and Oak Veneer, but not only. We also use lots of different materials.</p>
+                    <p><strong>LEARN MORE ABOUT THE CONCEPTION OF OUR CLIENT’S PROJECTS, AND OUR DIFFERENT MATERIALS, AND FINISHES.</strong></p>
+                    <p><a href="our-expertise.html" class="button_blank">View more</a></p>
+                </div>
+            </div>
+            <div class="one_half">
+                <div class="grid right_side">
+                    <div class="image-grid">
+                        <img src="images/image11.jpeg" alt="" class="image-grid-row-3" style="aspect-ratio: 0.93/2; object-fit: cover;" />
+                        <img src="images/image9.jpeg" alt="" style="aspect-ratio: 5/4.5; object-fit: cover;" />
+                        <img src="images/image13.png" alt="" style="aspect-ratio: 8.71/4; object-fit: cover;" />
+                        <img src="images/image10.jpeg" alt="" style="aspect-ratio: 6.68/5; object-fit: cover;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ################################################################################################ -->
+	<div class="row4">
+        <div class="group" id="footer">
+			<div class="general_padding">
+    			<div class="one_third first" style="padding-top: 30px;">
+    				<div class="content slogan">
+    				    <h2 class="center heading">OFFICE</h2>
+    					<p class="center">338B/2.23 An Phu St., 1B Zone, An Phu Ward,<br />Thuan An City, Binh Duong Province, Viet Nam</p>
+    				</div>
+    			</div>
+    			<div class="one_third" style="padding-top: 30px;">
+    				<div class="content slogan">
+        				<h2 class="center heading">Contact</h2>
+    					<p class="center">Tel: +84 (0)274 3731 636 (ext 101)<br />Email: info@daixuyenfurniture.com.vn<br />sales3@daixuyenfurniture.com.vn</p>
+    				</div>
+    			</div>
+    			<div class="one_third" style="padding-top: 30px;">
+                    <div class="content slogan">
+        				<h2 class="center heading">Opening Hours</h2>
+    					<p class="center">Mon – Sat: 8:00am – 4:30pm<br />Sun: Closed</p>
+    				</div>
+    			</div>
+            </div>
+        </div>
+    </div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+	<a id="backtotop" href="#top"><img src="images/up.png" style="width: 32px;" /></a>
+	<!-- JAVASCRIPTS -->
+	<script src="layout/scripts/jquery.min.js"></script>
+	<script src="layout/scripts/jquery.backtotop.js"></script>
+	<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+body{
+    font-family: 'Young Serif', serif;
+}
+
+.container{
+    padding: 70px 200px 0 200px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-between;
+   align-items: flex-start;
+}
+
+.col_1{
+    flex: 3;
+    padding-right: 10px;
+}
+
+.col_1 img{
+    width: 100%;
+    height: auto;
+}
+
+.col_2{
+    flex: 7;
+    padding-left: 10px;
+}
+
+.col_2 p{
+    margin: 0;
+}
+
+@media (max-width: 600px){
+.container{
+    padding: 50px 30px 0px 30px;
+}
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dai Xuyen Furniture</title>
+	<meta charset="utf-8"/>
+    <meta name="robots" content="max-image-preview:large" />
+	<meta name="keywords" content="Vietnamese wooden furniture factory" />
+	<meta name="description" content="Manufacturing, trade and service enterprises in the furniture industry." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="layout/styles/slider.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="layout/styles/image-grid.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="layout/styles/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="layout/styles/layout-vn.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body id="top">
+    <div id="navbar" class="wrapper row1">
+    	<header id="header"> 
+    	<div class="group ">
+    		<div class="first logo"><img  src="images/logo.png" alt="LOGO" style="max-width: 170px;" /></div>
+    		<div id="mainav">
+    			<nav>
+    				<ul class="center_horizontal clear">
+    					<li><a href="trang-chu.html">TRANG CHỦ</a></li>
+    					<li><a href="gioi-thieu.html">VỀ CHÚNG TÔI</a></li>
+    					<li><a href="chuyen-mon.html">TÍNH CHUYÊN MÔN</a></li>
+    					<li><a href="ben-vung.html">SỰ BỀN VỮNG</a></li>
+    					<li><a href="lien-he.html">LIÊN HỆ</a></li>
+    				</ul>
+    			</nav>
+    		</div>
+            <div class="flag"><a href="homepage.html"><img src="images/uk-flag.png" style="width: 18px;" /></a>&nbsp; 
+                <img src="images/vn-flag.png" style="width: 18px;" />
+            </div>
+    	</div>
+    		<!-- ################################################################################################ -->
+    	</header>
+    </div>
+<!-- ################################################################################################ -->
+<!-- Slideshow container -->
+    <div class="slideshow-container clear">
+    <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" style="display: block;">
+            <img src="images/25-scaled-1.jpg" class="full_slider main_img" style="padding: 0;" />
+        </div>
+        <div class="mySlides fade" style="display: none;">
+            <img src="images/26-scaled-1.jpg" class="full_slider main_img" style="padding: 0;" />
+        </div>
+        <div class="mySlides fade" style="display: none;">
+            <img src="images/27-scaled-1.jpg" class="full_slider main_img" style="padding: 0;" />
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a id="next" class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot active_img" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    var autoplayInterval = setInterval(function() {// Start autoplaying automatically
+        document.getElementById("next").click(); // Get element via id and click next
+      }, 3500); // Do this every 1 second, increase this!
+    
+    function stopAutoplay() { // Stop function added to button
+      clearInterval(autoplayInterval);// Stop the autoplay
+    }
+    
+    function plusSlides(n) { // Next/previous controls
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {  // Thumbnail image controls
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1;}
+      if (n < 1) {slideIndex = slides.length;}
+      for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+      for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active_img", "");}
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active_img";
+    }
+    </script>
+<!-- End Slideshow container -->
+<!-- ################################################################################################ -->
+    <div class="area group"><div class="general_padding">
+        <div class="one_third first" style="padding-top: 30px;">
+            <h3 class="center bold">SỨ MỆNH</h3>
+            <div class="content slogan">
+                <p class="center">Chúng tôi tin tưởng vào kinh nghiệm và kiến ​​thức của mình trong ngành gỗ để cung cấp đồ nội thất bằng gỗ có chất lượng tốt nhất trên thị trường quốc tế.</p>
+            </div>
+        </div>
+        <div class="one_third" style="padding-top: 30px;">
+            <h3 class="center bold">TẦM NHÌN</h3>
+            <div class="content slogan">
+                <p class="center">Mong muốn của bạn là nguyện vọng của chúng tôi. Dù dự án của bạn là gì, chúng tôi sẽ biến nó thành hiện thực, không gì là không thể.</p>
+            </div>
+        </div>
+        <div class="one_third" style="padding-top: 30px;">
+            <h3 class="center bold">GIÁ TRỊ</h3>
+            <div class="content slogan">
+                <p class="center">Chúng tôi luôn muốn điều tốt nhất cho bạn bằng kỹ năng chuyên môn của chúng tôi. </p>
+            </div>
+        </div>
+    </div></div>
+    <div class="area group grey_bg">
+        <p class="title_area">ĐÔI NÉT VỀ CÔNG TY</p>
+        <div class="general_padding center_horizontal"><img src="images/Company-Facts-vn.png" /></div>
+    </div>
+    <div class="area group">
+        <p class="title_area">VỀ CHÚNG TÔI</p>
+        <div class="general_padding">
+            <div class="one_half">
+                <div class="left_side justify">
+                    <p><strong>CÓ HƠN 20 NĂM KINH NGHIỆM TRONG NGÀNH KINH DOANH SẢN XUẤT NỘI THẤT GỖ CỨNG</strong></p>
+                    <p>Công ty Đại Xuyên được thành lập vào năm 2005 và nhà máy được đặt tại TP. Thuận An, tỉnh Bình Dương.</p>
+                    <p>Đại Xuyên Furniture được bắt đầu từ một xưởng mộc nhỏ do ông Phạm Văn Xuân sáng lập...</p>
+                    <p><strong>CHÚNG TÔI TỰ HÀO VỀ NHỮNG GÌ CHÚNG TÔI LÀM VÀ MUỐN MỜI BẠN TÌM HIỂU THÊM VỀ CHÚNG TÔI</strong></p>
+                    <p><a href="gioi-thieu.html" class="button_blank">Xem thêm</a></p>
+                </div>
+            </div>
+            <div class="one_half">
+                <div class="slideshow-container-aboutus right_side">
+                <!-- Full-width images with number and caption text -->
+                    <div class="mySlide_aboutus fade" style="display: block;">
+                      <img src="images/13-scaled-1.jpg" class="full_slider" />
+                    </div>
+                    <div class="mySlide_aboutus fade" style="display: none;">
+                      <img src="images/14-scaled-1.jpg" class="full_slider" />
+                    </div>
+                    <div class="mySlide_aboutus fade" style="display: none;">
+                      <img src="images/15-scaled-1.jpg" class="full_slider" />
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides_Aboutus(-1)">❮</a>
+                    <a id="nextAboutus" class="next" onclick="plusSlides_Aboutus(1)">❯</a>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot_aboutus active_img_aboutus" onclick="currentSlide_Aboutus(1)"></span>
+                    <span class="dot_aboutus" onclick="currentSlide_Aboutus(2)"></span>
+                    <span class="dot_aboutus" onclick="currentSlide_Aboutus(3)"></span>
+                </div>
+                </div>
+                <script type="text/javascript">
+                var slideAboutusIndex = 1;
+                showSlides_aboutus(slideAboutusIndex);
+                var autoplayInterval_Aboutus = setInterval(function() {// Start autoplaying automatically
+                    document.getElementById("nextAboutus").click(); // Get element via id and click next
+                  }, 3500); // Do this every 1 second, increase this!
+                
+                function stopAutoplay_Aboutus() { // Stop function added to button
+                  // Stop the autoplay
+                  clearInterval(autoplayInterval_Aboutus);
+                }
+                
+                function plusSlides_Aboutus(n) { // Next/previous controls
+                  showSlides_aboutus(slideAboutusIndex += n);
+                }
+                
+                function currentSlide_Aboutus(n) {  // Thumbnail image controls
+                  showSlides_aboutus(slideAboutusIndex = n);
+                }
+                function showSlides_aboutus(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlide_aboutus");
+                  var dots = document.getElementsByClassName("dot_aboutus");
+                  if (n > slides.length) {slideAboutusIndex = 1;}
+                  if (n < 1) {slideAboutusIndex = slides.length;}
+                  for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+                  for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active_img_aboutus", "");}
+                  slides[slideAboutusIndex - 1].style.display = "block";
+                  dots[slideAboutusIndex - 1].className += " active_img_aboutus";
+                }
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="area group orange_bg">
+        <p class="title_area">TÍNH CHUYÊN MÔN</p>
+        <div class="general_padding">
+            <div class="one_half">
+                <div class="left_side">
+                  <img src="images/16-scaled-1.jpg" class="left_right_side" />
+                </div>
+            </div>
+            <div class="one_half">
+                <div class="right_side">
+                    <p><strong>TẠO RA TRẢI NGHIỆM KHÁCH HÀNG TUYỆT VỜI NHẤT</strong></p>
+                    <p>Tại Đại Xuyên Furniture, chúng tôi không ngừng cải thiện và tận dụng dịch vụ của mình bằng cách cung cấp nhiều giải pháp cắt theo kích thước như công nghệ dán cạnh liền mạch hoặc đường mảnh và đồ nội thất định hình sau (bàn, tủ bếp…).</p>
+                    <p>Vì vậy bạn có thể tận hưởng những lợi ích toàn diện của dịch vụ giúp đạt được không gian nội thất nhất quán và thẩm mỹ hơn nói chung.</p>
+                </div>
+            </div>
+            <div class="split clear">&nbsp;</div>
+            <div class="one_half">
+                <div class="left_side">
+                    <p><strong>DÙ DỰ ÁN CỦA BẠN NÀO, CHÚNG TÔI ĐỒNG HÀNH CÙNG BẠN TỪ Ý TƯỞNG BAN ĐẦU ĐẾN VIỆC GIAO HÀNG SẢN PHẨM HOÀN THIỆN ĐẾN TẬN TAY BẠN</strong></p>
+                    <p>Tại Đại Xuyên Furniture, chúng tôi nổi tiếng được biết đến với thiết kế theo phong cách hoài cổ và thiết kế hiện đại.</p>
+                    <p>Chúng tôi chủ yếu sản xuất với gỗ và veneer Sồi. Nhưng không chỉ có vậy, chúng tôi cũng sử dụng nhiều vật liệu khác nhau.</p>
+                    <p><strong>TÌM HIỂU THÊM VỀ Ý TƯỞNG DỰ ÁN CỦA KHÁCH HÀNG VÀ CÁC VẬT LIỆU, MÀU SƠN KHÁC NHAU CỦA CHÚNG TÔI</strong></p>
+                    <p><a href="chuyen-mon.html" class="button_blank">Xem thêm</a></p>
+                </div>
+            </div>
+            <div class="one_half">
+                <div class="grid right_side">
+                    <div class="image-grid">
+                        <img src="images/image11.jpeg" alt="" class="image-grid-row-3" style="aspect-ratio: 0.93/2; object-fit: cover;" />
+                        <img src="images/image9.jpeg" alt="" style="aspect-ratio: 5/4.5; object-fit: cover;" />
+                        <img src="images/image13.png" alt="" style="aspect-ratio: 8.71/4; object-fit: cover;" />
+                        <img src="images/image10.jpeg" alt="" style="aspect-ratio: 6.68/5; object-fit: cover;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ################################################################################################ -->
+	<div class="row4">
+        <div class="group" id="footer">
+			<div class="general_padding">
+    			<div class="one_third first" style="padding-top: 30px;">
+    				<div class="content slogan">
+    				    <h2 class="center heading">VĂN PHÒNG</h2>
+    					<p class="center">338B/2.23 đường An Phú, KP. 1B, P. An Phú,<br />TP. Thuận An, tỉnh Bình Dương, Việt Nam</p>
+    				</div>
+    			</div>
+    			<div class="one_third" style="padding-top: 30px;">
+    				<div class="content slogan">
+        				<h2 class="center heading">LIÊN HỆ</h2>
+    					<p class="center">ĐT: +84 (0)274 3731 636 (ext 101)<br />Email: info@daixuyenfurniture.com.vn<br />sales3@daixuyenfurniture.com.vn</p>
+    				</div>
+    			</div>
+    			<div class="one_third" style="padding-top: 30px;">
+                    <div class="content slogan">
+        				<h2 class="center heading">GIỜ MỞ CỬA</h2>
+    					<p class="center">Thứ 2 - Thứ 7: 08:00 – 16:30<br />Chủ nhật: Đóng cửa</p>
+    				</div>
+    			</div>
+            </div>
+        </div>
+    </div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+	<a id="backtotop" href="#top"><img src="images/up.png" style="width: 32px;" /></a>
+	<!-- JAVASCRIPTS -->
+	<script src="layout/scripts/jquery.min.js"></script>
+	<script src="layout/scripts/jquery.backtotop.js"></script>
+	<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

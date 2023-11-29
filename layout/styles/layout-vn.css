@@ -1,0 +1,9 @@
+body {font-family: Georgia, Times New Roman; font-size: 18px; color: #6B6776;}
+
+@media screen and (max-width:670px) {
+    .title_area {font-size: 33px;}
+}
+@media screen and (max-width:450px) {
+    .title_area {font-size: 27px;} .centered_title_page {font-size: 25px;}
+}
+
